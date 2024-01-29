@@ -1,0 +1,7 @@
+venvapi/
+
+.vscode/
+
+__pycache__/
+
+.benchmarks/
