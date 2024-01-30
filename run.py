@@ -2,16 +2,10 @@
 import streamlit as st
 import pandas as pd
 
-
-
-
-
-# Cach data @st.cache
-@st.cache 
+# Cach data @st.cache_data
+@st.cache_data
 def load_data():
     return pd.read_csv("train.csv")
-
-df = load_data()
 
 ### Config
 st.set_page_config(
@@ -24,6 +18,7 @@ st.set_page_config(
 ### Title et markdown : st.title et st.markdown
 st.title("My ST App")
 
+df = load_data()
 
 ### Checkbox st.checkbox
 if st.checkbox("Show Dataframe") :
