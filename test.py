@@ -1,6 +1,6 @@
 # Import des librairies
 from unittest import TestCase, main
-from fastapi import TestClient
+from fastapi.testclient import TestClient
 from api import app
 
 # assertEqual(a, b) : Vérifie si a est égal à b.
