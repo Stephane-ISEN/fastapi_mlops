@@ -5,7 +5,8 @@ import pandas as pd
 # Cach data @st.cache_data
 @st.cache_data
 def load_data():
-    return pd.read_csv("train.csv")
+    df = pd.read_csv("train.csv", sep=";")
+    return df
 
 ### Config
 st.set_page_config(
