@@ -7,7 +7,7 @@ import pandas as pd
 
 
 # Cach data @st.cache
-@st.cachedef 
+@st.cache 
 def load_data():
     return pd.read_csv("train.csv")
 
