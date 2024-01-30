@@ -61,7 +61,7 @@ class TestApi(TestCase):
     # Vérifie que l'API est bien lancée
     def test_root(self):
         response = client.get("/")
-        self.assertEqual(response.status_code; 200)
+        self.assertEqual(response.status_code, 200)
         self.assertEqual(response.json(), {"message":"Hello world"})
 
     # Vérifie que l'API est bien lancée
