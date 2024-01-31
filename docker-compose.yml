@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  isen_sl:
+    image: sl_isen
+    container_name: isen_sl
+    ports:
+      - "80:5000"
+    volumes:
+      - ".:/home/app"
+    environment:
+      - PORT=5000
+

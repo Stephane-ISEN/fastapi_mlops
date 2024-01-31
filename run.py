@@ -1,56 +1,58 @@
-### Import
-import streamlit as st
-import pandas as pd
+# ### Import
+# import streamlit as st
+# import pandas as pd
 
-# Cach data @st.cache_data
-@st.cache_data
-def load_data():
-    df = pd.read_csv("train.csv", sep=";")
-    return df
+# # Cach data @st.cache_data
+# @st.cache_data
+# def load_data():
+#     df = pd.read_csv("train.csv", sep=";")
+#     return df
 
-### Config
-st.set_page_config(
-    page_title="Streamlit",
-    page_icon="",
-    layout="wide",
-    initial_sidebar_state="expanded"
-)
+# ### Config
+# st.set_page_config(
+#     page_title="Streamlit",
+#     page_icon="",
+#     layout="wide",
+#     initial_sidebar_state="expanded"
+# )
 
-### Title et markdown : st.title et st.markdown
-st.title("My ST App")
+# ### Title et markdown : st.title et st.markdown
+# st.title("My ST App")
 
-df = load_data()
+# df = load_data()
 
-### Checkbox st.checkbox
-if st.checkbox("Show Dataframe") :
-    st.write(df)
+# st.sidebar.image("img.jpg")
 
-### Selectbox st.selectbox
+# ### Checkbox st.checkbox
+# if st.checkbox("Show Dataframe") :
+#     st.write(df)
 
-
-
-### Forms st.form, st.form_submit_button et st.select_slider
+# ### Selectbox st.selectbox
 
 
 
-### Columns st.columns
+# ### Forms st.form, st.form_submit_button et st.select_slider
 
 
 
-### Graphique Histogramme avec matplotlib.pyplot, seaborn et st.pyplot
-
-
-### Image avec st.image
-
-
-### Graphique Histogramme px.histogram et st.plotly_chart
+# ### Columns st.columns
 
 
 
-### Graphique Pie chart px.pie et st.plotly_chart
+# ### Graphique Histogramme avec matplotlib.pyplot, seaborn et st.pyplot
+
+
+# ### Image avec st.image
+
+
+# ### Graphique Histogramme px.histogram et st.plotly_chart
 
 
 
-### + De graphiques ici : https://plotly.com/python/
+# ### Graphique Pie chart px.pie et st.plotly_chart
+
+
+
+# ### + De graphiques ici : https://plotly.com/python/
 
 
