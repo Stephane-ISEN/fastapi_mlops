@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  mlf_isen:
+    image: mlf_isen
+    container_name: mlf_isen
+    ports:
+      - "5000:5000"
+    volumes:
+      - ".:/home/app"
+    environment:
+      - PORT=5000
+
